@@ -1,0 +1,12 @@
+function userprofile(firstname,lastname,age,email){
+    this.firstname=firstname;
+    this.lastname=lastname;
+    this.age=age;
+    this.email=email;
+}
+const user=new  userprofile("cp","sivakumar",23,"cpsivakumar09@gmail.com");
+
+const fullname=`${user.fistname}${user.lastname}`;
+const userage=user.age;
+
+console.log(`fullname:${user.lastname},age:${user.age},email:${user.email}`);
