@@ -33,4 +33,22 @@ function Recipe(title, ingredients, instructions, isVegetarian) {
   console.log(`Ingredients:  ${pastaRecipe.ingredients.join(', ')}`);
   console.log(`Instructions:\n' ${pastaRecipe.instructions}`);
   console.log(`Vegetarian: ${ pastaRecipe.isVegetarian}`);
+
+
+  //-------------------------------------------------------------------------------------------------------
+
+  
+function Book(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+
+  const myBook = new Book("Rich Dad Poor Dad", "Robert Kiyosaki, Sharon Lechter", 1997);
+  
+  console.log("Book Information:");
+  console.log(`Title: ${myBook.title}`);
+  console.log(`Author: ${myBook.author}`);
+  console.log(`Year: ${myBook.year}`);
+  
   
