@@ -10,3 +10,27 @@ const fullname=`${user.fistname}${user.lastname}`;
 const userage=user.age;
 
 console.log(`fullname:${user.lastname},age:${user.age},email:${user.email}`);
+
+//--------------------------------------------------------------------------------------------------------
+
+function Recipe(title, ingredients, instructions, isVegetarian) {
+    this.title = title;
+    this.ingredients = ingredients;
+    this.instructions = instructions;
+    this.isVegetarian = isVegetarian;
+  }
+  
+  
+  const pastaRecipe = new Recipe(
+    'Spaghetti Carbonara',
+    ['Spaghetti', 'Pancetta', 'Eggs', 'Parmesan cheese', 'Black pepper'],
+    '1. Cook spaghetti according to package instructions.\n2. In a pan, cook pancetta until crispy.\n3. In a bowl, whisk together eggs and grated Parmesan.\n4. Drain spaghetti and toss with egg mixture.\n5. Mix in cooked pancetta and season with black pepper.',
+    false
+  );
+  
+  
+  console.log(`Recipe Title:  ${pastaRecipe.title}`);
+  console.log(`Ingredients:  ${pastaRecipe.ingredients.join(', ')}`);
+  console.log(`Instructions:\n' ${pastaRecipe.instructions}`);
+  console.log(`Vegetarian: ${ pastaRecipe.isVegetarian}`);
+  
