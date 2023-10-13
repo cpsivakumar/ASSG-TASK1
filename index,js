@@ -51,4 +51,20 @@ function Book(title, author, year) {
   console.log(`Author: ${myBook.author}`);
   console.log(`Year: ${myBook.year}`);
   
+  //---------------------------------------------------------------------------------------------------------
+
+
+
+function Product(name, price, category) {
+    this.name = name;
+    this.price = price;
+    this.category = category;
+  }
+  
+  const myProduct = new Product("Laptop", 999.99, "Electronics");
+  
+  console.log("Product Information:");
+  console.log(`Name:  ${myProduct.name}`);
+  console.log(`Price: $ ${myProduct.price}`);
+  console.log(`Category:${myProduct.category}`);
   
